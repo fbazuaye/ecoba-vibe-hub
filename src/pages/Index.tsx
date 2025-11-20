@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Countdown } from "@/components/Countdown";
 import { Calendar, Users, Award, Tv } from "lucide-react";
+import logoImage from "@/assets/logo.png";
 
 const Index = () => {
   const eventDate = new Date('2025-04-17T09:00:00');
@@ -14,9 +15,9 @@ const Index = () => {
       {/* Hero Section */}
       <section className="bg-primary text-primary-foreground py-20 px-4">
         <div className="container mx-auto text-center">
-          {/* ECOBA Crest Placeholder */}
-          <div className="w-32 h-32 mx-auto mb-8 bg-accent rounded-full flex items-center justify-center">
-            <span className="text-6xl font-bold text-accent-foreground">E</span>
+          {/* ECOBA Crest */}
+          <div className="w-48 h-48 mx-auto mb-8">
+            <img src={logoImage} alt="ECOBA Crest" className="w-full h-full object-contain" />
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">
