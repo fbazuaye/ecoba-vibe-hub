@@ -6,7 +6,7 @@ import { Calendar, Users, Award, Tv } from "lucide-react";
 import logoImage from "@/assets/logo.png";
 
 const Index = () => {
-  const eventDate = new Date('2025-04-17T09:00:00');
+  const eventDate = new Date('2025-12-05T09:00:00');
 
   return (
     <div className="min-h-screen">
@@ -27,10 +27,10 @@ const Index = () => {
             AGM & National Convention
           </h2>
           <p className="text-xl md:text-2xl mb-4 opacity-90">
-            April 17-18, 2025 • Lagos, Nigeria
+            December 5-7, 2025 • Constantial Hotel, Airport Road, Benin City
           </p>
           <p className="text-lg mb-12 opacity-80 max-w-2xl mx-auto">
-            Join us for two days of networking, leadership, and celebrating excellence in the ECOBA community.
+            Join us for three days of networking, leadership, and celebrating excellence in the ECOBA community.
           </p>
           
           {/* Countdown Timer */}
