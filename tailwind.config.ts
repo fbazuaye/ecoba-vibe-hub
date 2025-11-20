@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        ecoba: {
+          green: "hsl(var(--ecoba-green))",
+          gold: "hsl(var(--ecoba-gold))",
+          dark: "hsl(var(--ecoba-dark))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
