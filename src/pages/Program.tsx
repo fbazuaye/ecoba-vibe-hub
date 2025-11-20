@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 
 export default function Program() {
   const day1Events = [
@@ -86,6 +87,8 @@ export default function Program() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
