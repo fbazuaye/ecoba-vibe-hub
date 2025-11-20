@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Countdown } from "@/components/Countdown";
 
@@ -56,6 +57,8 @@ export default function Livestream() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

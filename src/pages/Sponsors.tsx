@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 
 export default function Sponsors() {
@@ -79,6 +80,8 @@ export default function Sponsors() {
           </p>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

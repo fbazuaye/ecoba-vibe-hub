@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { Input } from "@/components/ui/input";
@@ -126,6 +127,8 @@ export default function Delegates() {
           )}
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
