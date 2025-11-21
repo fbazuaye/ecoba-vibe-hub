@@ -3,24 +3,14 @@ import { Footer } from "@/components/Footer";
 
 export default function Program() {
   const day1Events = [
-    { time: "8:00 AM", title: "Registration & Breakfast", location: "Main Hall" },
-    { time: "9:00 AM", title: "Opening Ceremony", location: "Convention Center" },
-    { time: "10:30 AM", title: "Presidential Address", location: "Convention Center" },
-    { time: "12:00 PM", title: "Lunch Break", location: "Dining Hall" },
-    { time: "2:00 PM", title: "Committee Reports", location: "Convention Center" },
-    { time: "4:00 PM", title: "Branch Presentations", location: "Convention Center" },
-    { time: "6:00 PM", title: "Cocktail Reception", location: "Garden Terrace" },
-    { time: "7:30 PM", title: "Gala Dinner", location: "Grand Ballroom" },
+    { time: "8:00 AM", title: "Golf Tee Off", location: "Benin Club Golf Course" },
+    { time: "3:00 PM", title: "Novelty Football Match", location: "Airforce Base, Airport Road" },
+    { time: "7:00 PM", title: "Cocktail to Welcome Delegates", location: "Constantia Hotel, Airport Road" },
   ];
 
   const day2Events = [
-    { time: "8:00 AM", title: "Breakfast", location: "Dining Hall" },
-    { time: "9:00 AM", title: "Annual General Meeting", location: "Convention Center" },
-    { time: "11:00 AM", title: "Election of Officers", location: "Convention Center" },
-    { time: "1:00 PM", title: "Lunch", location: "Dining Hall" },
-    { time: "2:30 PM", title: "Inauguration of New Executives", location: "Convention Center" },
-    { time: "4:00 PM", title: "Closing Ceremony", location: "Convention Center" },
-    { time: "5:00 PM", title: "Farewell Toast", location: "Garden Terrace" },
+    { time: "10:00 AM", title: "AGM & Elections", location: "Constantia Hotel, Airport Road, Benin City" },
+    { time: "6:00 PM", title: "Awards and Dinner Night", location: "Constantia Hotel, Airport Road, Benin City" },
   ];
 
   return (
@@ -32,14 +22,14 @@ export default function Program() {
           Convention Program
         </h1>
         <p className="text-center text-muted-foreground mb-12 text-lg">
-          April 17-18, 2025 • Lagos, Nigeria
+          December 5-6, 2025 • Benin City, Nigeria
         </p>
 
         {/* Day 1 */}
         <div className="mb-16">
           <div className="flex items-center gap-4 mb-8">
             <div className="h-1 flex-1 bg-accent"></div>
-            <h2 className="text-3xl font-bold text-primary">Day 1 - April 17</h2>
+            <h2 className="text-3xl font-bold text-primary">Day 1 - Friday, December 5th</h2>
             <div className="h-1 flex-1 bg-accent"></div>
           </div>
 
@@ -65,7 +55,7 @@ export default function Program() {
         <div>
           <div className="flex items-center gap-4 mb-8">
             <div className="h-1 flex-1 bg-accent"></div>
-            <h2 className="text-3xl font-bold text-primary">Day 2 - April 18</h2>
+            <h2 className="text-3xl font-bold text-primary">Day 2 - Saturday, December 6th</h2>
             <div className="h-1 flex-1 bg-accent"></div>
           </div>
 
