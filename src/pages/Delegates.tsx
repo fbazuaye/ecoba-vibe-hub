@@ -1,10 +1,14 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { User, Session } from "@supabase/supabase-js";
+import { toast } from "sonner";
 
 interface Attendee {
   id: string;
@@ -17,14 +21,45 @@ interface Attendee {
 }
 
 export default function Delegates() {
+  const navigate = useNavigate();
+  const [user, setUser] = useState<User | null>(null);
+  const [session, setSession] = useState<Session | null>(null);
   const [attendees, setAttendees] = useState<Attendee[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [branchFilter, setBranchFilter] = useState("all");
   const [typeFilter, setTypeFilter] = useState("all");
 
   useEffect(() => {
-    fetchAttendees();
-  }, []);
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (event, session) => {
+        setSession(session);
+        setUser(session?.user ?? null);
+        
+        if (!session?.user) {
+          navigate("/auth");
+        }
+      }
+    );
+
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session);
+      setUser(session?.user ?? null);
+      
+      if (!session?.user) {
+        navigate("/auth");
+      } else {
+        fetchAttendees();
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, [navigate]);
+
+  const handleSignOut = async () => {
+    await supabase.auth.signOut();
+    toast.success("Signed out successfully");
+    navigate("/");
+  };
 
   const fetchAttendees = async () => {
     const { data, error } = await supabase
@@ -51,6 +86,17 @@ export default function Delegates() {
     <div className="min-h-screen bg-background">
       <Navigation />
       
+      {user && (
+        <div className="bg-primary/10 py-2">
+          <div className="container mx-auto px-4 flex justify-between items-center">
+            <span className="text-sm">Signed in as {user.email}</span>
+            <Button onClick={handleSignOut} variant="ghost" size="sm">
+              Sign Out
+            </Button>
+          </div>
+        </div>
+      )}
+
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-5xl font-bold text-center text-primary mb-4">
           Delegates Directory
