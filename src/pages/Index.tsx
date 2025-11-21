@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Countdown } from "@/components/Countdown";
 import { Calendar, Users, Award, Tv } from "lucide-react";
 import logoImage from "@/assets/logo.png";
+import presidentImage from "@/assets/president.png";
 
 const Index = () => {
   const eventDate = new Date('2025-12-05T09:00:00');
@@ -56,6 +57,31 @@ const Index = () => {
                 Register Now
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* President Section */}
+      <section className="py-16 px-4 bg-background">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto bg-card border-2 border-border rounded-lg p-8 md:p-12 shadow-lg">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="w-48 h-48 flex-shrink-0">
+                <img 
+                  src={presidentImage} 
+                  alt="H.E. CHIEF LUCKY N. IGBINEDION" 
+                  className="w-full h-full object-cover rounded-lg shadow-md"
+                />
+              </div>
+              <div className="text-center md:text-left">
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                  H.E. CHIEF LUCKY N. IGBINEDION
+                </h2>
+                <p className="text-xl text-accent font-semibold">
+                  President, Edo College Old Boys Association (ECOBA) Worldwide
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
