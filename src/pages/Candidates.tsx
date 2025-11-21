@@ -27,7 +27,7 @@ export default function Candidates() {
       id: 1,
       name: "John Doe",
       set: "1995 Set",
-      position: "National President",
+      position: "The President",
       photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
       bio: "Distinguished alumnus with 25+ years of leadership experience in corporate governance.",
       manifesto: "My vision is to strengthen ECOBA's national presence and create sustainable value for all members through strategic partnerships and enhanced member engagement."
@@ -36,7 +36,7 @@ export default function Candidates() {
       id: 2,
       name: "Jane Smith",
       set: "1998 Set",
-      position: "National Vice President",
+      position: "1st Vice President",
       photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
       bio: "Experienced administrator with a track record of excellence in organizational development.",
       manifesto: "I pledge to support our President in delivering transformative programs that benefit every ECOBA member across all branches."
@@ -45,10 +45,73 @@ export default function Candidates() {
       id: 3,
       name: "Michael Johnson",
       set: "2000 Set",
-      position: "National Secretary",
+      position: "2nd Vice President",
       photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop",
+      bio: "Dynamic leader with expertise in strategic planning and member relations.",
+      manifesto: "I will work to enhance communication and collaboration between all branches and national leadership."
+    },
+    {
+      id: 4,
+      name: "Sarah Williams",
+      set: "1997 Set",
+      position: "Secretary General",
+      photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
       bio: "Detail-oriented professional committed to transparency and efficient administration.",
       manifesto: "I will ensure seamless communication, proper documentation, and accountability in all ECOBA activities."
+    },
+    {
+      id: 5,
+      name: "David Brown",
+      set: "1999 Set",
+      position: "Assistant Secretary General",
+      photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop",
+      bio: "Organized and efficient administrator dedicated to supporting the Secretary General.",
+      manifesto: "I will ensure all administrative processes run smoothly and efficiently."
+    },
+    {
+      id: 6,
+      name: "Emily Davis",
+      set: "2001 Set",
+      position: "National Financial Secretary",
+      photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop",
+      bio: "Financial expert with extensive experience in non-profit financial management.",
+      manifesto: "I pledge to maintain accurate financial records and ensure transparency in all transactions."
+    },
+    {
+      id: 7,
+      name: "Robert Wilson",
+      set: "1996 Set",
+      position: "National Treasurer",
+      photo: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=300&h=300&fit=crop",
+      bio: "Certified accountant with over 20 years of experience in financial stewardship.",
+      manifesto: "I will ensure prudent financial management and growth of ECOBA's resources."
+    },
+    {
+      id: 8,
+      name: "Patricia Taylor",
+      set: "1998 Set",
+      position: "National Legal Adviser",
+      photo: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=300&fit=crop",
+      bio: "Senior legal practitioner with expertise in corporate and association law.",
+      manifesto: "I will provide sound legal guidance and ensure all ECOBA activities comply with relevant laws."
+    },
+    {
+      id: 9,
+      name: "James Anderson",
+      set: "2002 Set",
+      position: "National Publicity Secretary",
+      photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop",
+      bio: "Media professional with a passion for storytelling and brand building.",
+      manifesto: "I will enhance ECOBA's public image and keep members informed through effective communication."
+    },
+    {
+      id: 10,
+      name: "Linda Martinez",
+      set: "2000 Set",
+      position: "National Social Secretary",
+      photo: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=300&fit=crop",
+      bio: "Event planning specialist passionate about creating memorable experiences.",
+      manifesto: "I will organize engaging social events that strengthen bonds among ECOBA members."
     },
   ];
 
