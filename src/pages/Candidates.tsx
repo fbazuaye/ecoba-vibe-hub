@@ -38,7 +38,7 @@ export default function Candidates() {
       name: "Marcus Thompson",
       set: "1998 Set",
       position: "1st Vice President",
-      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
+      photo: "",
       bio: "Experienced administrator with a track record of excellence in organizational development.",
       manifesto: "I pledge to support our President in delivering transformative programs that benefit every ECOBA member across all branches."
     },
@@ -47,7 +47,7 @@ export default function Candidates() {
       name: "Michael Johnson",
       set: "2000 Set",
       position: "2nd Vice President",
-      photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop",
+      photo: "",
       bio: "Dynamic leader with expertise in strategic planning and member relations.",
       manifesto: "I will work to enhance communication and collaboration between all branches and national leadership."
     },
@@ -56,7 +56,7 @@ export default function Candidates() {
       name: "Samuel Richards",
       set: "1997 Set",
       position: "Secretary General",
-      photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop",
+      photo: "",
       bio: "Detail-oriented professional committed to transparency and efficient administration.",
       manifesto: "I will ensure seamless communication, proper documentation, and accountability in all ECOBA activities."
     },
@@ -65,7 +65,7 @@ export default function Candidates() {
       name: "David Brown",
       set: "1999 Set",
       position: "Assistant Secretary General",
-      photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop",
+      photo: "",
       bio: "Organized and efficient administrator dedicated to supporting the Secretary General.",
       manifesto: "I will ensure all administrative processes run smoothly and efficiently."
     },
@@ -74,7 +74,7 @@ export default function Candidates() {
       name: "Emmanuel Davies",
       set: "2001 Set",
       position: "National Financial Secretary",
-      photo: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=300&h=300&fit=crop",
+      photo: "",
       bio: "Financial expert with extensive experience in non-profit financial management.",
       manifesto: "I pledge to maintain accurate financial records and ensure transparency in all transactions."
     },
@@ -83,7 +83,7 @@ export default function Candidates() {
       name: "Robert Wilson",
       set: "1996 Set",
       position: "National Treasurer",
-      photo: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=300&h=300&fit=crop",
+      photo: "",
       bio: "Certified accountant with over 20 years of experience in financial stewardship.",
       manifesto: "I will ensure prudent financial management and growth of ECOBA's resources."
     },
@@ -92,7 +92,7 @@ export default function Candidates() {
       name: "Patrick Taylor",
       set: "1998 Set",
       position: "National Legal Adviser",
-      photo: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=300&h=300&fit=crop",
+      photo: "",
       bio: "Senior legal practitioner with expertise in corporate and association law.",
       manifesto: "I will provide sound legal guidance and ensure all ECOBA activities comply with relevant laws."
     },
@@ -101,7 +101,7 @@ export default function Candidates() {
       name: "James Anderson",
       set: "2002 Set",
       position: "National Publicity Secretary",
-      photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop",
+      photo: "",
       bio: "Media professional with a passion for storytelling and brand building.",
       manifesto: "I will enhance ECOBA's public image and keep members informed through effective communication."
     },
@@ -110,7 +110,7 @@ export default function Candidates() {
       name: "Leonard Martinez",
       set: "2000 Set",
       position: "National Social Secretary",
-      photo: "https://images.unsplash.com/photo-1608598966756-c97058a95c27?w=300&h=300&fit=crop",
+      photo: "",
       bio: "Event planning specialist passionate about creating memorable experiences.",
       manifesto: "I will organize engaging social events that strengthen bonds among ECOBA members."
     },
@@ -166,13 +166,15 @@ export default function Candidates() {
               className="overflow-hidden hover:shadow-xl transition-all cursor-pointer group border-2 hover:border-accent"
               onClick={() => setSelectedCandidate(candidate)}
             >
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={candidate.photo}
-                  alt={candidate.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
+              {candidate.photo && (
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={candidate.photo}
+                    alt={candidate.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+              )}
               <div className="p-6 bg-card">
                 <h3 className="text-2xl font-bold text-primary mb-2">{candidate.name}</h3>
                 {candidate.set && <p className="text-accent font-semibold mb-1">{candidate.set}</p>}
@@ -192,11 +194,13 @@ export default function Candidates() {
                 <DialogTitle className="text-3xl text-primary">{selectedCandidate.name}</DialogTitle>
               </DialogHeader>
               <div className="space-y-6">
-                <img
-                  src={selectedCandidate.photo}
-                  alt={selectedCandidate.name}
-                  className="w-full h-64 object-cover rounded-lg"
-                />
+                {selectedCandidate.photo && (
+                  <img
+                    src={selectedCandidate.photo}
+                    alt={selectedCandidate.name}
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
+                )}
                 <div>
                   {selectedCandidate.set && <p className="text-accent font-bold text-lg">{selectedCandidate.set}</p>}
                   <p className="text-primary font-semibold">{selectedCandidate.position}</p>
