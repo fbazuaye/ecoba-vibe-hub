@@ -10,6 +10,7 @@ import Delegates from "./pages/Delegates";
 import Register from "./pages/Register";
 import Sponsors from "./pages/Sponsors";
 import Livestream from "./pages/Livestream";
+import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/register" element={<Register />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/livestream" element={<Livestream />} />
+          <Route path="/auth" element={<Auth />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
