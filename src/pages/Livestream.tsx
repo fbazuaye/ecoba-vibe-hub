@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Countdown } from "@/components/Countdown";
 
 export default function Livestream() {
-  const eventDate = new Date('2025-04-17T09:00:00');
+  const eventDate = new Date('2025-12-05T09:00:00');
 
   return (
     <div className="min-h-screen bg-background">
@@ -35,26 +35,25 @@ export default function Livestream() {
                 Livestream Coming Soon
               </h3>
               <p className="text-muted-foreground">
-                The livestream will be available here when the convention begins on April 17, 2025.
-              </p>
-              <p className="text-sm text-muted-foreground mt-4">
-                Streaming platforms: YouTube & Facebook Live
+                The livestream will be available here when the convention begins on December 5th, 2025.
               </p>
             </div>
           </div>
         </Card>
 
-        {/* Social Links */}
+        {/* Website Link */}
         <div className="text-center mt-12">
           <h3 className="text-xl font-bold text-primary mb-4">
             Follow us for updates
           </h3>
-          <div className="flex justify-center gap-6">
-            <a href="#" className="text-accent hover:underline font-semibold">YouTube</a>
-            <a href="#" className="text-accent hover:underline font-semibold">Facebook</a>
-            <a href="#" className="text-accent hover:underline font-semibold">Twitter</a>
-            <a href="#" className="text-accent hover:underline font-semibold">Instagram</a>
-          </div>
+          <a 
+            href="https://ecoba.com.ng/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-accent hover:underline font-semibold text-lg"
+          >
+            https://ecoba.com.ng/
+          </a>
         </div>
       </div>
 
