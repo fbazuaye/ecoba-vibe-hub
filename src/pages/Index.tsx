@@ -74,14 +74,14 @@ const Index = () => {
                 />
               </div>
               <div className="text-center md:text-left">
-                <p className="text-lg text-muted-foreground font-semibold mb-2">
-                  Chief Host
-                </p>
                 <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2">
                   H.E. CHIEF LUCKY N. IGBINEDION
                 </h2>
-                <p className="text-xl text-accent font-semibold">
+                <p className="text-xl text-accent font-semibold mb-1">
                   President, Edo College Old Boys Association (ECOBA) Worldwide
+                </p>
+                <p className="text-lg text-muted-foreground font-semibold">
+                  Chief Host
                 </p>
               </div>
             </div>
