@@ -66,11 +66,11 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto bg-card border-2 border-border rounded-lg p-8 md:p-12 shadow-lg">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="w-48 h-48 flex-shrink-0">
+              <div className="w-48 h-64 flex-shrink-0">
                 <img 
                   src={presidentImage} 
                   alt="H.E. CHIEF LUCKY N. IGBINEDION" 
-                  className="w-full h-full object-cover rounded-lg shadow-md"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
               <div className="text-center md:text-left">
