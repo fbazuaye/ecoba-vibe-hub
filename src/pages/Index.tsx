@@ -74,6 +74,9 @@ const Index = () => {
                 />
               </div>
               <div className="text-center md:text-left">
+                <p className="text-lg text-muted-foreground font-semibold mb-2">
+                  Chief Host
+                </p>
                 <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2">
                   H.E. CHIEF LUCKY N. IGBINEDION
                 </h2>
