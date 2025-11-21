@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import presidentPhoto from "@/assets/engr-greg-ogbeifun.png";
 
 interface Candidate {
   id: number;
@@ -25,10 +26,10 @@ export default function Candidates() {
   const candidates: Candidate[] = [
     {
       id: 1,
-      name: "John Doe",
-      set: "1995 Set",
+      name: "Engr. Greg Ogbeifun",
+      set: "",
       position: "The President",
-      photo: "https://images.unsplash.com/photo-1506863530036-1efeddceb993?w=300&h=300&fit=crop",
+      photo: presidentPhoto,
       bio: "Distinguished alumnus with 25+ years of leadership experience in corporate governance.",
       manifesto: "My vision is to strengthen ECOBA's national presence and create sustainable value for all members through strategic partnerships and enhanced member engagement."
     },
@@ -174,7 +175,7 @@ export default function Candidates() {
               </div>
               <div className="p-6 bg-card">
                 <h3 className="text-2xl font-bold text-primary mb-2">{candidate.name}</h3>
-                <p className="text-accent font-semibold mb-1">{candidate.set}</p>
+                {candidate.set && <p className="text-accent font-semibold mb-1">{candidate.set}</p>}
                 <p className="text-muted-foreground font-medium">{candidate.position}</p>
               </div>
             </Card>
@@ -197,7 +198,7 @@ export default function Candidates() {
                   className="w-full h-64 object-cover rounded-lg"
                 />
                 <div>
-                  <p className="text-accent font-bold text-lg">{selectedCandidate.set}</p>
+                  {selectedCandidate.set && <p className="text-accent font-bold text-lg">{selectedCandidate.set}</p>}
                   <p className="text-primary font-semibold">{selectedCandidate.position}</p>
                 </div>
                 <div>
