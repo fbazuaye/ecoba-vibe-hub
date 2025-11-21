@@ -28,16 +28,16 @@ export default function Candidates() {
       name: "John Doe",
       set: "1995 Set",
       position: "The President",
-      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
+      photo: "https://images.unsplash.com/photo-1506863530036-1efeddceb993?w=300&h=300&fit=crop",
       bio: "Distinguished alumnus with 25+ years of leadership experience in corporate governance.",
       manifesto: "My vision is to strengthen ECOBA's national presence and create sustainable value for all members through strategic partnerships and enhanced member engagement."
     },
     {
       id: 2,
-      name: "Jane Smith",
+      name: "Marcus Thompson",
       set: "1998 Set",
       position: "1st Vice President",
-      photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
+      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
       bio: "Experienced administrator with a track record of excellence in organizational development.",
       manifesto: "I pledge to support our President in delivering transformative programs that benefit every ECOBA member across all branches."
     },
@@ -52,10 +52,10 @@ export default function Candidates() {
     },
     {
       id: 4,
-      name: "Sarah Williams",
+      name: "Samuel Richards",
       set: "1997 Set",
       position: "Secretary General",
-      photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
+      photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop",
       bio: "Detail-oriented professional committed to transparency and efficient administration.",
       manifesto: "I will ensure seamless communication, proper documentation, and accountability in all ECOBA activities."
     },
@@ -70,10 +70,10 @@ export default function Candidates() {
     },
     {
       id: 6,
-      name: "Emily Davis",
+      name: "Emmanuel Davies",
       set: "2001 Set",
       position: "National Financial Secretary",
-      photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop",
+      photo: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=300&h=300&fit=crop",
       bio: "Financial expert with extensive experience in non-profit financial management.",
       manifesto: "I pledge to maintain accurate financial records and ensure transparency in all transactions."
     },
@@ -88,10 +88,10 @@ export default function Candidates() {
     },
     {
       id: 8,
-      name: "Patricia Taylor",
+      name: "Patrick Taylor",
       set: "1998 Set",
       position: "National Legal Adviser",
-      photo: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=300&fit=crop",
+      photo: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=300&h=300&fit=crop",
       bio: "Senior legal practitioner with expertise in corporate and association law.",
       manifesto: "I will provide sound legal guidance and ensure all ECOBA activities comply with relevant laws."
     },
@@ -106,10 +106,10 @@ export default function Candidates() {
     },
     {
       id: 10,
-      name: "Linda Martinez",
+      name: "Leonard Martinez",
       set: "2000 Set",
       position: "National Social Secretary",
-      photo: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=300&fit=crop",
+      photo: "https://images.unsplash.com/photo-1608598966756-c97058a95c27?w=300&h=300&fit=crop",
       bio: "Event planning specialist passionate about creating memorable experiences.",
       manifesto: "I will organize engaging social events that strengthen bonds among ECOBA members."
     },
