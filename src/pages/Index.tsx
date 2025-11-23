@@ -89,6 +89,65 @@ const Index = () => {
         </div>
       </section>
 
+      {/* National Exco Members Section */}
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="container mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
+            National ECOBA Officers
+          </h2>
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h3 className="text-lg font-bold text-primary mb-1">Chief Lucky Igbinedion</h3>
+              <p className="text-accent font-semibold">President</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h3 className="text-lg font-bold text-primary mb-1">Engr. Greg Ogbeifun</h3>
+              <p className="text-accent font-semibold">1st Vice President</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h3 className="text-lg font-bold text-primary mb-1">Mr. Aigbe Olotu</h3>
+              <p className="text-accent font-semibold">2nd Vice President</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h3 className="text-lg font-bold text-primary mb-1">Mr. Justice E. Aigbe</h3>
+              <p className="text-accent font-semibold">General Secretary</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h3 className="text-lg font-bold text-primary mb-1">Mr. Bright Aikhaine</h3>
+              <p className="text-accent font-semibold">Asst. General Secretary</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h3 className="text-lg font-bold text-primary mb-1">Engr. Elvis Obaseki</h3>
+              <p className="text-accent font-semibold">Social Secretary</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h3 className="text-lg font-bold text-primary mb-1">Sir. Tpl Jeff Anuta</h3>
+              <p className="text-accent font-semibold">National Financial Secretary</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h3 className="text-lg font-bold text-primary mb-1">Mr. Anthony Ohei</h3>
+              <p className="text-accent font-semibold">Publicity Secretary</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h3 className="text-lg font-bold text-primary mb-1">Mr. Fred Anuta</h3>
+              <p className="text-accent font-semibold">Financial Secretary</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h3 className="text-lg font-bold text-primary mb-1">Dr. Ruben Osahon</h3>
+              <p className="text-accent font-semibold">Ex-Officio</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h3 className="text-lg font-bold text-primary mb-1">Barr. Nosa Iyekekpolor</h3>
+              <p className="text-accent font-semibold">Past Legal Adviser</p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6 text-center opacity-60">
+              <h3 className="text-lg font-bold text-primary mb-1">Legal Adviser</h3>
+              <p className="text-muted-foreground font-semibold">Vacant</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quick Links Section */}
       <section className="py-20 px-4 bg-background">
         <div className="container mx-auto">
