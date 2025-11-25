@@ -10,11 +10,14 @@ import presidentPhoto from "@/assets/engr-greg-ogbeifun.png";
 interface Candidate {
   id: number;
   name: string;
-  set: string;
+  year: string;
   position: string;
   photo: string;
-  bio: string;
-  manifesto: string;
+  branch: string;
+  sponsor: string;
+  sponsorBranch: string;
+  coSponsor: string;
+  coSponsorBranch: string;
 }
 
 export default function Candidates() {
@@ -22,103 +25,121 @@ export default function Candidates() {
   const [searchTerm, setSearchTerm] = useState("");
   const [positionFilter, setPositionFilter] = useState("all");
 
-  // Sample data - will be replaced with database later
   const candidates: Candidate[] = [
     {
       id: 1,
-      name: "Engr. Greg Ogbeifun",
-      set: "",
-      position: "The President",
+      name: "Engr Greg Ogbeifun",
+      year: "1965-1971",
+      position: "President",
       photo: presidentPhoto,
-      bio: "Distinguished alumnus with 25+ years of leadership experience in corporate governance.",
-      manifesto: "My vision is to strengthen ECOBA's national presence and create sustainable value for all members through strategic partnerships and enhanced member engagement."
+      branch: "Benin",
+      sponsor: "Akin Tokurah",
+      sponsorBranch: "Benin",
+      coSponsor: "Bob Osaghae",
+      coSponsorBranch: "Abuja"
     },
     {
       id: 2,
-      name: "Marcus Thompson",
-      set: "1998 Set",
+      name: "Dr. Suleiman Braimoh",
+      year: "1970-1976",
       position: "1st Vice President",
       photo: "",
-      bio: "Experienced administrator with a track record of excellence in organizational development.",
-      manifesto: "I pledge to support our President in delivering transformative programs that benefit every ECOBA member across all branches."
+      branch: "Abuja",
+      sponsor: "Bob Osaghae",
+      sponsorBranch: "Abuja",
+      coSponsor: "Charles Isa",
+      coSponsorBranch: "Lagos"
     },
     {
       id: 3,
-      name: "Michael Johnson",
-      set: "2000 Set",
+      name: "Solomon Ikhioda",
+      year: "1968-1975",
       position: "2nd Vice President",
       photo: "",
-      bio: "Dynamic leader with expertise in strategic planning and member relations.",
-      manifesto: "I will work to enhance communication and collaboration between all branches and national leadership."
+      branch: "Lagos",
+      sponsor: "Charles Isa",
+      sponsorBranch: "Lagos",
+      coSponsor: "Akin Tokurah",
+      coSponsorBranch: "Benin"
     },
     {
       id: 4,
-      name: "Samuel Richards",
-      set: "1997 Set",
-      position: "Secretary General",
+      name: "Abor Adiabuia Solomon",
+      year: "1984-1988",
+      position: "Asst Secretary General",
       photo: "",
-      bio: "Detail-oriented professional committed to transparency and efficient administration.",
-      manifesto: "I will ensure seamless communication, proper documentation, and accountability in all ECOBA activities."
+      branch: "Asaba",
+      sponsor: "Ogbuchi Frank Okolie",
+      sponsorBranch: "Asaba",
+      coSponsor: "Engr Radolph Deh Opute",
+      coSponsorBranch: "Benin"
     },
     {
       id: 5,
-      name: "David Brown",
-      set: "1999 Set",
-      position: "Assistant Secretary General",
+      name: "Justice Eghe Aigbe",
+      year: "1980-1984",
+      position: "National Financial Secretary",
       photo: "",
-      bio: "Organized and efficient administrator dedicated to supporting the Secretary General.",
-      manifesto: "I will ensure all administrative processes run smoothly and efficiently."
+      branch: "Benin",
+      sponsor: "Akin Tokurah",
+      sponsorBranch: "Benin",
+      coSponsor: "Dr M. O. Osarenkhoe",
+      coSponsorBranch: "Asaba"
     },
     {
       id: 6,
-      name: "Emmanuel Davies",
-      set: "2001 Set",
-      position: "National Financial Secretary",
+      name: "Dr M. O. Osarenkhoe",
+      year: "",
+      position: "National Treasurer",
       photo: "",
-      bio: "Financial expert with extensive experience in non-profit financial management.",
-      manifesto: "I pledge to maintain accurate financial records and ensure transparency in all transactions."
+      branch: "Asaba",
+      sponsor: "Ogbuchi Frank Okolie",
+      sponsorBranch: "Asaba",
+      coSponsor: "Fred Onakpoya",
+      coSponsorBranch: "Warri"
     },
     {
       id: 7,
-      name: "Robert Wilson",
-      set: "1996 Set",
-      position: "National Treasurer",
+      name: "Jude Eluemunor",
+      year: "1988-1993",
+      position: "National Legal Adviser",
       photo: "",
-      bio: "Certified accountant with over 20 years of experience in financial stewardship.",
-      manifesto: "I will ensure prudent financial management and growth of ECOBA's resources."
+      branch: "Lagos",
+      sponsor: "Charles Isa",
+      sponsorBranch: "Lagos",
+      coSponsor: "Bob Osaghae",
+      coSponsorBranch: "Abuja"
     },
     {
       id: 8,
-      name: "Patrick Taylor",
-      set: "1998 Set",
-      position: "National Legal Adviser",
+      name: "Engr Radolph Deh Opute",
+      year: "1990-1996",
+      position: "National Publicity Secretary",
       photo: "",
-      bio: "Senior legal practitioner with expertise in corporate and association law.",
-      manifesto: "I will provide sound legal guidance and ensure all ECOBA activities comply with relevant laws."
+      branch: "Benin",
+      sponsor: "Akim Tokurah",
+      sponsorBranch: "Benin",
+      coSponsor: "Charles Isa",
+      coSponsorBranch: "Lagos"
     },
     {
       id: 9,
-      name: "James Anderson",
-      set: "2002 Set",
-      position: "National Publicity Secretary",
-      photo: "",
-      bio: "Media professional with a passion for storytelling and brand building.",
-      manifesto: "I will enhance ECOBA's public image and keep members informed through effective communication."
-    },
-    {
-      id: 10,
-      name: "Leonard Martinez",
-      set: "2000 Set",
+      name: "Isaac Onobrudu",
+      year: "1986-1992",
       position: "National Social Secretary",
       photo: "",
-      bio: "Event planning specialist passionate about creating memorable experiences.",
-      manifesto: "I will organize engaging social events that strengthen bonds among ECOBA members."
+      branch: "Warri",
+      sponsor: "Fred Onakpoya",
+      sponsorBranch: "Warri",
+      coSponsor: "Engr Radolph Deh Opute",
+      coSponsorBranch: "Benin"
     },
   ];
 
   const filteredCandidates = candidates.filter(candidate => {
     const matchesSearch = candidate.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         candidate.set.toLowerCase().includes(searchTerm.toLowerCase());
+                         candidate.year.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         candidate.branch.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesPosition = positionFilter === "all" || candidate.position === positionFilter;
     return matchesSearch && matchesPosition;
   });
@@ -131,16 +152,16 @@ export default function Candidates() {
       
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-5xl font-bold text-center text-primary mb-4">
-          Meet the Candidates
+          2025 ECOBA National Election Candidates
         </h1>
         <p className="text-center text-muted-foreground mb-12 text-lg">
-          Get to know the leaders vying for your vote
+          Meet the nominees for National ECOBA Officers
         </p>
 
         {/* Search and Filter */}
         <div className="max-w-4xl mx-auto mb-12 flex flex-col md:flex-row gap-4">
           <Input
-            placeholder="Search by name or set..."
+            placeholder="Search by name, year, or branch..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="flex-1"
@@ -176,9 +197,12 @@ export default function Candidates() {
                 </div>
               )}
               <div className="p-6 bg-card">
-                <h3 className="text-2xl font-bold text-primary mb-2">{candidate.name}</h3>
-                {candidate.set && <p className="text-accent font-semibold mb-1">{candidate.set}</p>}
-                <p className="text-muted-foreground font-medium">{candidate.position}</p>
+                <h3 className="text-xl font-bold text-primary mb-2">{candidate.name}</h3>
+                <p className="text-accent font-semibold text-lg mb-1">{candidate.position}</p>
+                <div className="space-y-1 text-sm">
+                  {candidate.year && <p className="text-muted-foreground"><span className="font-medium">Year:</span> {candidate.year}</p>}
+                  <p className="text-muted-foreground"><span className="font-medium">Branch:</span> {candidate.branch}</p>
+                </div>
               </div>
             </Card>
           ))}
@@ -201,17 +225,23 @@ export default function Candidates() {
                     className="w-full h-64 object-cover rounded-lg"
                   />
                 )}
-                <div>
-                  {selectedCandidate.set && <p className="text-accent font-bold text-lg">{selectedCandidate.set}</p>}
-                  <p className="text-primary font-semibold">{selectedCandidate.position}</p>
+                <div className="bg-muted/30 p-4 rounded-lg space-y-2">
+                  <p className="text-accent font-bold text-2xl">{selectedCandidate.position}</p>
+                  {selectedCandidate.year && (
+                    <p className="text-foreground"><span className="font-semibold">Year:</span> {selectedCandidate.year}</p>
+                  )}
+                  <p className="text-foreground"><span className="font-semibold">Branch:</span> {selectedCandidate.branch}</p>
                 </div>
-                <div>
-                  <h4 className="text-xl font-bold text-primary mb-2">Biography</h4>
-                  <p className="text-foreground">{selectedCandidate.bio}</p>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-primary mb-2">Manifesto</h4>
-                  <p className="text-foreground">{selectedCandidate.manifesto}</p>
+                <div className="border-l-4 border-primary pl-4">
+                  <h4 className="text-lg font-bold text-primary mb-3">Nomination Details</h4>
+                  <div className="space-y-2 text-sm">
+                    <p className="text-foreground">
+                      <span className="font-semibold">Sponsor:</span> {selectedCandidate.sponsor} ({selectedCandidate.sponsorBranch} Branch)
+                    </p>
+                    <p className="text-foreground">
+                      <span className="font-semibold">Co-Sponsor:</span> {selectedCandidate.coSponsor} ({selectedCandidate.coSponsorBranch} Branch)
+                    </p>
+                  </div>
                 </div>
               </div>
             </>
