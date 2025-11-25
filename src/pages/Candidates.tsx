@@ -152,10 +152,10 @@ export default function Candidates() {
       
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-5xl font-bold text-center text-primary mb-4">
-          2025 ECOBA National Election Candidates
+          Meet the Candidates
         </h1>
         <p className="text-center text-muted-foreground mb-12 text-lg">
-          Meet the nominees for National ECOBA Officers
+          Get to know the leaders vying for your vote
         </p>
 
         {/* Search and Filter */}
