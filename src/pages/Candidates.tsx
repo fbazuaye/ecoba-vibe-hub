@@ -64,6 +64,18 @@ export default function Candidates() {
     },
     {
       id: 4,
+      name: "Bright Ebhohon Akhaine",
+      year: "1987-1992",
+      position: "Secretary General",
+      photo: "",
+      branch: "Port Harcourt",
+      sponsor: "Esan Edovbiye",
+      sponsorBranch: "PH",
+      coSponsor: "Pst Isaac Onobrudu",
+      coSponsorBranch: "Warri"
+    },
+    {
+      id: 5,
       name: "Abor Adiabuia Solomon",
       year: "1984-1988",
       position: "Asst Secretary General",
@@ -75,7 +87,7 @@ export default function Candidates() {
       coSponsorBranch: "Benin"
     },
     {
-      id: 5,
+      id: 6,
       name: "Justice Eghe Aigbe",
       year: "1980-1984",
       position: "National Financial Secretary",
@@ -87,7 +99,7 @@ export default function Candidates() {
       coSponsorBranch: "Asaba"
     },
     {
-      id: 6,
+      id: 7,
       name: "Dr M. O. Osarenkhoe",
       year: "",
       position: "National Treasurer",
@@ -99,7 +111,7 @@ export default function Candidates() {
       coSponsorBranch: "Warri"
     },
     {
-      id: 7,
+      id: 8,
       name: "Jude Eluemunor",
       year: "1988-1993",
       position: "National Legal Adviser",
@@ -111,7 +123,7 @@ export default function Candidates() {
       coSponsorBranch: "Abuja"
     },
     {
-      id: 8,
+      id: 9,
       name: "Engr Radolph Deh Opute",
       year: "1990-1996",
       position: "National Publicity Secretary",
@@ -123,7 +135,7 @@ export default function Candidates() {
       coSponsorBranch: "Lagos"
     },
     {
-      id: 9,
+      id: 10,
       name: "Isaac Onobrudu",
       year: "1986-1992",
       position: "National Social Secretary",
