@@ -64,30 +64,25 @@ const Index = () => {
       {/* President Section */}
       <section className="py-16 px-4 bg-background">
         <div className="container mx-auto">
-          <div className="max-w-5xl mx-auto bg-card border-2 border-border rounded-lg overflow-hidden shadow-xl">
-            <div className="flex flex-col md:flex-row items-stretch">
-              <div className="w-full md:w-2/5 lg:w-1/3">
+          <div className="max-w-6xl mx-auto bg-card rounded-lg p-8 md:p-12">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
+              <div className="w-64 md:w-80 flex-shrink-0">
                 <img 
                   src={chiefHostImage} 
                   alt="H.E. CHIEF LUCKY N. IGBINEDION" 
-                  className="w-full h-full object-cover min-h-[400px] md:min-h-[500px]"
+                  className="w-full h-auto object-cover rounded"
                 />
               </div>
-              <div className="flex-1 p-8 md:p-12 flex flex-col justify-center">
-                <div className="text-center md:text-left">
-                  <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-3">
-                    Chief Host
-                  </p>
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 leading-tight">
-                    H.E. CHIEF LUCKY N. IGBINEDION
-                  </h2>
-                  <p className="text-xl md:text-2xl text-foreground font-semibold mb-2">
-                    President
-                  </p>
-                  <p className="text-lg text-muted-foreground">
-                    Edo College Old Boys Association (ECOBA) Worldwide
-                  </p>
-                </div>
+              <div className="flex-1 text-center md:text-left">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: 'hsl(158, 64%, 19%)' }}>
+                  H.E. CHIEF LUCKY N. IGBINEDION
+                </h2>
+                <p className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4" style={{ color: 'hsl(38, 92%, 50%)' }}>
+                  President, Edo College Old Boys Association (ECOBA) Worldwide
+                </p>
+                <p className="text-xl md:text-2xl text-muted-foreground font-medium">
+                  Chief Host
+                </p>
               </div>
             </div>
           </div>
