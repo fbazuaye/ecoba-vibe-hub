@@ -77,7 +77,7 @@ const Index = () => {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: 'hsl(158, 64%, 19%)' }}>
                   H.E. CHIEF LUCKY N. IGBINEDION
                 </h2>
-                <p className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4" style={{ color: 'hsl(38, 92%, 50%)' }}>
+                <p className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4 text-accent">
                   President, Edo College Old Boys Association (ECOBA) Worldwide
                 </p>
                 <p className="text-xl md:text-2xl text-muted-foreground font-medium">
