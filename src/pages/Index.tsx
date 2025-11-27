@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Countdown } from "@/components/Countdown";
 import { Calendar, Users, Award, Tv } from "lucide-react";
 import logoImage from "@/assets/logo.png";
-import presidentImage from "@/assets/president.png";
+import chiefHostImage from "@/assets/chief-lucky-igbinedion.jpg";
 
 const Index = () => {
   const eventDate = new Date('2025-12-05T09:00:00');
@@ -68,9 +68,9 @@ const Index = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-48 h-64 flex-shrink-0">
                 <img 
-                  src={presidentImage} 
+                  src={chiefHostImage} 
                   alt="H.E. CHIEF LUCKY N. IGBINEDION" 
-                  className="w-full h-full object-contain rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
               <div className="text-center md:text-left">
