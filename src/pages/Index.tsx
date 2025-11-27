@@ -129,20 +129,12 @@ const Index = () => {
               <p className="text-accent font-semibold">Publicity Secretary</p>
             </div>
             <div className="bg-card border border-border rounded-lg p-6 text-center">
-              <h3 className="text-lg font-bold text-primary mb-1">Mr. Fred Anuta</h3>
-              <p className="text-accent font-semibold">Financial Secretary</p>
-            </div>
-            <div className="bg-card border border-border rounded-lg p-6 text-center">
               <h3 className="text-lg font-bold text-primary mb-1">Dr. Ruben Osahon</h3>
               <p className="text-accent font-semibold">Ex-Officio</p>
             </div>
             <div className="bg-card border border-border rounded-lg p-6 text-center">
               <h3 className="text-lg font-bold text-primary mb-1">Barr. Nosa Iyekekpolor</h3>
               <p className="text-accent font-semibold">Past Legal Adviser</p>
-            </div>
-            <div className="bg-card border border-border rounded-lg p-6 text-center opacity-60">
-              <h3 className="text-lg font-bold text-primary mb-1">Legal Adviser</h3>
-              <p className="text-muted-foreground font-semibold">Vacant</p>
             </div>
           </div>
         </div>
