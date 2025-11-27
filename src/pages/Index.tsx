@@ -64,25 +64,30 @@ const Index = () => {
       {/* President Section */}
       <section className="py-16 px-4 bg-background">
         <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto bg-card border-2 border-border rounded-lg p-8 md:p-12 shadow-lg">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="w-48 h-64 flex-shrink-0">
+          <div className="max-w-5xl mx-auto bg-card border-2 border-border rounded-lg overflow-hidden shadow-xl">
+            <div className="flex flex-col md:flex-row items-stretch">
+              <div className="w-full md:w-2/5 lg:w-1/3">
                 <img 
                   src={chiefHostImage} 
                   alt="H.E. CHIEF LUCKY N. IGBINEDION" 
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover min-h-[400px] md:min-h-[500px]"
                 />
               </div>
-              <div className="text-center md:text-left">
-                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                  H.E. CHIEF LUCKY N. IGBINEDION
-                </h2>
-                <p className="text-xl text-accent font-semibold mb-1">
-                  President, Edo College Old Boys Association (ECOBA) Worldwide
-                </p>
-                <p className="text-lg text-muted-foreground font-semibold">
-                  Chief Host
-                </p>
+              <div className="flex-1 p-8 md:p-12 flex flex-col justify-center">
+                <div className="text-center md:text-left">
+                  <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-3">
+                    Chief Host
+                  </p>
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 leading-tight">
+                    H.E. CHIEF LUCKY N. IGBINEDION
+                  </h2>
+                  <p className="text-xl md:text-2xl text-foreground font-semibold mb-2">
+                    President
+                  </p>
+                  <p className="text-lg text-muted-foreground">
+                    Edo College Old Boys Association (ECOBA) Worldwide
+                  </p>
+                </div>
               </div>
             </div>
           </div>
