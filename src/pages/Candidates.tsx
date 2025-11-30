@@ -16,6 +16,8 @@ import aigbePhoto from "@/assets/candidates/aigbe.jpg";
 import ehondorPhoto from "@/assets/candidates/ehondor.jpg";
 import osarenkhoePhoto from "@/assets/candidates/osarenkhoe.jpg";
 import eluemunorPhoto from "@/assets/candidates/eluemunor.jpg";
+import oputePhoto from "@/assets/candidates/opute.jpg";
+import onobruduPhoto from "@/assets/candidates/onobrudu.jpg";
 
 interface Candidate {
   id: number;
@@ -293,6 +295,65 @@ export default function Candidates() {
         "Outstanding contributions in campaign management and political strategy"
       ],
       manifesto: "Navigate complex business environments, spot opportunities, and execute strategic initiatives for sustainable organizational growth. Proven track record in enhancing board effectiveness, financial performance, and stakeholder engagement."
+    },
+    {
+      id: 11,
+      name: "Engr Radolph Deh Opute",
+      year: "1990-1996",
+      position: "National Publicity Secretary",
+      photo: oputePhoto,
+      branch: "Benin",
+      sponsor: "Akin Tokurah",
+      sponsorBranch: "Benin",
+      coSponsor: "Justice Eghe Aigbe",
+      coSponsorBranch: "Benin",
+      profile: "OPUTE Deh Randolph, MNSE, MSPE, MNIEE, MNiPeTE, MNiPeTGE, NIFEngM, COREN, Reg. is a lecturer with Igbinedion University Okada. He lived his early life in Accra, Lagos and Benin city. He is from Ndokwa West Local Govt Area Delta State, and has a maternal Ghanaian heritage.",
+      qualifications: [
+        "Victory Nursery and Primary school (1984-1990)",
+        "Edo College (1991-1996, Esigie house)",
+        "University of Benin (2000-2006 BEng, 2010-2012 MEng)",
+        "STCW '95 Maritime Certifications",
+        "Multiple HSE and Safety Certifications"
+      ],
+      experience: [
+        "Lecturer, Igbinedion University Okada",
+        "ECOBA Class of 1996 Set Coordinator/Head (2017 – 2024)",
+        "ECOBA Benin Branch Secretary (2017 - present)",
+        "ECOBA E-library Project commissioning secretary (2024)",
+        "Principal's Award of Excellence 2019 for numerous projects",
+        "Experience in banking sector and marine time sector"
+      ],
+      manifesto: "As National Publicity Secretary, I will be responsible for all publicity matters of the Association, serving as spokesperson and communication officer. Key duties include managing media relations, public image management, organizing promotional events, and ensuring all communications present a positive and progressive image of ECOBA strategically, maintaining public trust and interest across all platforms including digital transformation."
+    },
+    {
+      id: 12,
+      name: "Isaac Onobrudu",
+      year: "1986-1992",
+      position: "National Social Secretary",
+      photo: onobruduPhoto,
+      branch: "Warri",
+      sponsor: "Fred Onakpoya",
+      sponsorBranch: "Warri",
+      coSponsor: "Bright Ebhohon Akhaine",
+      coSponsorBranch: "Port Harcourt",
+      profile: "ONOBRUDU Eseoghene Isaac is a committed Community Leader, Writer, Researcher, Cultural Historian, Advocate, Educationalist, Pastor, Media Professional, and passionate advocate of the Edo College Old Boys Association (ECOBA). A proud alumnus of Edo College, class of 1986 - 1992 set from Nana House.",
+      qualifications: [
+        "National Diploma in Fisheries Oceanography - Federal College of Fisheries & Marine Technology, Victoria Island, Lagos",
+        "National Diploma in Industrial Safety & Environmental Engineering Technology - Petroleum Training Institute, Effurun",
+        "Higher National Diploma in Environmental Engineering Technology - Petroleum Training Institute",
+        "HSE Level 3 Certification - Institute of Safety Professionals of Nigeria (ISPN), Warri",
+        "Rig Safety, First Aid, Swimming Certifications"
+      ],
+      experience: [
+        "Lead Pastor, Kingstower International Christian Centre (KICC)",
+        "Secretary, ECOBA Warri Branch (4 years)",
+        "Director General, Kokori Social Cultural & Empowerment Organisation (KSCEO)",
+        "Founder & President, Agbon People Historical Foundation (APHF)",
+        "Publicity Secretary, The African Church, Warri Province",
+        "Graphic Consultant, Kingstower Digital Solutions",
+        "Author - Editor of 'Agbon Kingdom Legacy' and 'Walking with God in a Distracted World'"
+      ],
+      manifesto: "Bring fresh energy to ECOBA National Social Secretary with focus on steady blend of strong alumni engagement and network building, vibrant social activities and event coordinations, digital transformation of social engagement, enhanced branch-national collaboration via class sets, creativity, innovation, and a renewed sense of unity among old boys across the world."
     }
   ];
 
