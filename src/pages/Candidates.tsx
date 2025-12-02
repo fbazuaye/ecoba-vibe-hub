@@ -424,11 +424,11 @@ export default function Candidates() {
               className="overflow-hidden hover:shadow-xl transition-all cursor-pointer group border-2 hover:border-accent"
               onClick={() => setSelectedCandidate(candidate)}
             >
-              <div className="aspect-square overflow-hidden bg-muted">
+              <div className="aspect-[4/5] overflow-hidden bg-muted rounded-t-xl">
                 <img
                   src={candidate.photo}
                   alt={candidate.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-6 bg-card">
@@ -453,11 +453,11 @@ export default function Candidates() {
                 <DialogTitle className="text-3xl text-primary">{selectedCandidate.name}</DialogTitle>
               </DialogHeader>
               <div className="space-y-6">
-                <div className="aspect-video overflow-hidden rounded-lg bg-muted">
+                <div className="aspect-[4/3] overflow-hidden rounded-xl bg-muted">
                   <img
                     src={selectedCandidate.photo}
                     alt={selectedCandidate.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
                 
