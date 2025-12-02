@@ -196,7 +196,7 @@ export default function Candidates() {
     {
       id: 7,
       name: "Justice Eghe Aigbe",
-      year: "1980-1984",
+      year: "1979-1984",
       position: "National Financial Secretary",
       photo: aigbePhoto,
       branch: "Benin",
@@ -204,24 +204,30 @@ export default function Candidates() {
       sponsorBranch: "Benin",
       coSponsor: "Dr M. O. Osarenkhoe",
       coSponsorBranch: "Asaba",
-      profile: "Dedicated educator and administrator with extensive experience in teaching and leadership roles. Currently serves as Executive Principal at Edo College. Doctorate Student in Strategic and Financial Management at University of Benin.",
+      profile: "Dedicated educator and administrator with extensive experience in teaching and leadership roles. Served as Executive Principal in various institutions, including currently at Edo College. Resides at Staff Quarters, Edo College Compound, Murtala Mohammed Way, Benin City.",
       qualifications: [
-        "DBA (CIV) - Currently pursuing Doctorate, University of Benin",
-        "MBA (2003)",
-        "PGDE (2014)",
+        "DBA (CIV) - Currently pursuing Doctorate in Strategic and Financial Management, University of Benin",
+        "MBA, University of Benin (2003)",
+        "PGDE, NOUN (2014)",
         "ASCON (2009)",
-        "PGDBA (1998)",
-        "HND (1991)"
+        "PGDBA, Yaba College of Technology (1998)",
+        "HND, Yaba College of Technology (1991)",
+        "Diploma in Financial Management, Financial Training Institute Lagos (1994)",
+        "Certificate in Creative Marketing (1994)",
+        "Old Western (Eyaenugie) Primary School (1973-1979)",
+        "Edo College (1979-1984 O/L; 1984-1986 A/L) - Ozolua House (Nibaromi)"
       ],
       experience: [
-        "Executive Principal, Edo College",
+        "Teacher, Housemaster, Vice Principal and Executive Principal, Edo College",
+        "Trained and Worked as Media Executive at Insight Communications Ltd., Lagos",
         "General Secretary, ECOBA (4 years)",
         "Assistant Secretary General, ECOBA (11 years)",
+        "Interim Chairman, ECOBA Benin Branch (2 years)",
         "Chairman, ECOBA Benin Branch Welfare Committee (3 years)",
         "Secretary, ECOBA Benin Branch (10 years)",
-        "Ozolua House (Nibaromi), 1979-1986"
+        "Assistant Secretary, ECOBA Benin Branch (3 years)"
       ],
-      manifesto: "Ensure transparency and accountability in financial management, strengthen financial systems through decisive coordination, mobilize funds and optimize resources, promote financial sustainability and growth, and coordinate branches, class sets and individual financial objectives."
+      manifesto: "Ensure transparency and accountability in financial management of ECOBA matters. Strengthen ECOBA financial systems and processes through diligence and decisive coordination. Partner with all members in mobilizing funds and optimize resources towards achieving ECOBA's lofty goals. Promote financial sustainability and growth towards the envisioned development of ECOBA projects. Project ECOBA NEC's coordination of branches, class sets and individual financial objectives."
     },
     {
       id: 8,
@@ -257,22 +263,32 @@ export default function Candidates() {
       sponsorBranch: "Asaba",
       coSponsor: "Fred Onakpoya",
       coSponsorBranch: "Warri",
-      profile: "Consultant General Surgeon Special Grade 1 at Federal Medical Centre, Asaba. Current Chairman of ECOBA Asaba branch with extensive experience in leadership roles across professional and alumni associations.",
+      profile: "Dr. M. O. Osarenkhoe hails from Aideyanoba Sokponba in Orhionmwon Local Government Area of Edo State. He had his primary school education at Aideyanoba Primary School, Sokponba. He was at Edo College from 1979-1984. A Consultant General Surgeon Special Grade 1 at Federal Medical Centre, Asaba since 2000 (peak as a clinician in public service since 2009). Current Chairman of ECOBA Asaba branch with a meritorious service award for dedicated service. Has not missed any NEC meetings since becoming a member and actively contributed to all programmes under HE Chief Lucky Nosakhare Igbinedion's leadership.",
       qualifications: [
         "FACS - Fellow of the American College of Surgeons",
         "FICS - Fellow of the International College of Surgeons",
-        "FWACS - Fellow of the West African College of Surgeons",
+        "FWACS - Fellow of the West African College of Surgeons (2001)",
         "MBA - University of Benin (1999/2000)",
-        "Medical Degree - University of Ilorin (1985-1991)"
+        "Medical Degree - University of Ilorin Medical School (1985-1991)",
+        "Internship - University of Ilorin Teaching Hospital (1991-1992)",
+        "NYSC - Civil Servant Clinic, Port Harcourt (1992-1993)",
+        "Residency Training - University of Benin Teaching Hospital (Fellowship 2000)"
       ],
       experience: [
-        "Consultant General Surgeon Special Grade 1, FMC Asaba",
+        "Consultant General Surgeon Special Grade 1, FMC Asaba (2000-Present)",
+        "Two-time Head of Department of Surgery, FMC Asaba",
+        "Head of General Surgery Division, FMC Asaba (2000-Present)",
         "Director, Asaba Cancer Registry",
         "Chairman, Nigeria Cancer Society, Delta State Branch",
+        "Chairman, Edo Welfare Association, FMC Asaba",
         "Current Chairman, ECOBA Asaba Branch",
-        "National Financial Secretary, ICS Nigeria (2019-2025)",
+        "Two-time Vice Chairman, ECOBA Asaba Branch",
+        "Financial Secretary, ECOBA Asaba Branch",
+        "Pioneer Secretary & later Chairman, Anti-corruption Unit (ACTU), FMC Asaba",
         "Chairman, NMA Delta State (2012-2014)",
-        "Two-time Head of Department of Surgery, FMC Asaba"
+        "National PRO, MDCAN (2009-2011)",
+        "National Financial Secretary, ICS Nigeria (2019-2025)",
+        "Current Assistant Secretary General, ICS Nigeria (2025-)"
       ]
     },
     {
