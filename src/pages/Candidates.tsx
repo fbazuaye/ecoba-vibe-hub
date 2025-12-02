@@ -64,7 +64,8 @@ export default function Candidates() {
         "Chairman, Starzs Gas Limited, Eaglewatch Security Limited, Diverse Autocare Centre Limited",
         "Over 1,200-1,300 Nigerians employed across his companies",
         "Served on numerous Presidential, Ministerial, and Government Agency Committees"
-      ]
+      ],
+      manifesto: "CORE VISION: RECONNECT • REBUILD • REIGNITE\n\n1. RECONNECT — Unify ECOBA Worldwide: Connect alumni across Nigeria, UK, Europe, North America, Middle East, Far East, Canada, Australia & New Zealand. Launch global alumni database, newsletters, online mentorship, and ECOBA Mobile App. Goal: No Old Boy Left Behind.\n\n2. REBUILD — Transform Edo College Strategically: Deliver the Edo College Strategic Development Plan (EC-SDP) 2026–2035. Implement 5-year operational plan (2026–2030). Revitalize ECOBA Endowment Initiative. Coordinate all class-set and branch projects. Upgrade facilities, laboratories, and teacher quality. Goal: Restore the Authentic Edo College Experience.\n\n3. REIGNITE — Restore Pride, Energy & Alumni Power: Celebrate ECOBA icons; strengthen mentorship. Build global alumni networking for jobs & business. Ensure transparent stewardship. Rebrand ECOBA as a global force. Goal: Make ECOBA Nigeria's Most Vibrant Alumni Body.\n\nGUIDING PRINCIPLE: We are one heritage, one brotherhood. Together, we rebuild Edo College and uplift all ECOBAites. 'One broomstick cannot sweep the floor — but together, we can make it shine.'"
     },
     {
       id: 2,
@@ -91,7 +92,8 @@ export default function Candidates() {
         "Regional Chief of Programmes and Planning for South Asia at UNICEF",
         "Global Head of Strategic Human Resources Planning at UNICEF HQ, New York",
         "Managed programmes exceeding $170 million USD"
-      ]
+      ],
+      manifesto: "VISION: A dynamic, development-focused and future-ready ECOBA that inspires unity, strengthens member welfare, and drives impactful contributions to Edo College.\n\nMISSION: To support strong national leadership, ensure administrative continuity, champion development initiatives, and uphold ECOBA as a vibrant force for progress and excellence.\n\nKEY PRIORITIES:\n1. Effective Leadership in Absence of the President - Provide firm, fair, inclusive and coordinated leadership when required.\n2. Loyal & Strategic Support to the President and NEC - Strengthen internal coordination and communication.\n3. Ensuring Stability and Continuity - Act with neutrality, integrity, and commitment to unity.\n4. Leading the Development & Endowment Committee - Strengthen governance, transparency and donor confidence. Expand alumni donor networks and sustainable funding channels.\n5. Additional Strategic Initiatives - Encourage Chapter participation, strengthen digital communication, increase visibility of ECOBA projects, promote transparency, and foster intergenerational connections.\n\n'For a Future-Ready ECOBA'"
     },
     {
       id: 3,
