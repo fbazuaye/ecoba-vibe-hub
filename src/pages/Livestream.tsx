@@ -60,23 +60,17 @@ export default function Livestream() {
           {/* Live Chat */}
           <Card className="p-4 border-2 border-accent">
             <h3 className="text-lg font-bold text-primary mb-3">Live Chat</h3>
-            {YOUTUBE_VIDEO_ID ? (
-              <iframe
-                className="w-full h-[400px] lg:h-[calc(100%-2.5rem)] rounded-lg"
-                src={`https://www.youtube.com/live_chat?v=${YOUTUBE_VIDEO_ID}&embed_domain=${window.location.hostname}`}
-                title="ECOBA 2025 Live Chat"
-                allow="accelerometer; clipboard-write; encrypted-media"
-              />
-            ) : (
-              <div className="h-[400px] lg:h-[calc(100%-2.5rem)] bg-muted rounded-lg flex items-center justify-center">
-                <div className="text-center p-4">
-                  <div className="text-4xl mb-3">💬</div>
-                  <p className="text-muted-foreground text-sm">
-                    Live chat will be available during the broadcast.
-                  </p>
-                </div>
+            <div className="h-[400px] lg:h-[calc(100%-2.5rem)] bg-muted rounded-lg flex items-center justify-center">
+              <div className="text-center p-4">
+                <div className="text-4xl mb-3">💬</div>
+                <p className="text-muted-foreground text-sm">
+                  Live chat is only available during an active livestream broadcast.
+                </p>
+                <p className="text-muted-foreground text-xs mt-2">
+                  Check back on December 5th, 2025 when the convention goes live!
+                </p>
               </div>
-            )}
+            </div>
           </Card>
         </div>
 
