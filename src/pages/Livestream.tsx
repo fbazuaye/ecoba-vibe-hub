@@ -5,7 +5,7 @@ import { Countdown } from "@/components/Countdown";
 
 // UPDATE THIS: Replace with your YouTube video ID when the livestream is ready
 // Example: For URL https://www.youtube.com/watch?v=ABC123, use "ABC123"
-const YOUTUBE_VIDEO_ID = ""; // Leave empty to show "Coming Soon" placeholder
+const YOUTUBE_VIDEO_ID = "qppV3n3YlF8";
 
 export default function Livestream() {
   const eventDate = new Date('2025-12-05T09:00:00');
