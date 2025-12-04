@@ -30,30 +30,55 @@ export default function Livestream() {
           <Countdown targetDate={eventDate} />
         </div>
 
-        {/* Livestream Embed */}
-        <Card className="max-w-5xl mx-auto p-4 border-2 border-accent">
-          {YOUTUBE_VIDEO_ID ? (
-            <iframe
-              className="w-full aspect-video rounded-lg"
-              src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=0&rel=0`}
-              title="ECOBA 2025 AGM & Convention Livestream"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
-          ) : (
-            <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="text-6xl mb-4">📺</div>
-                <h3 className="text-2xl font-bold text-primary mb-2">
-                  Livestream Coming Soon
-                </h3>
-                <p className="text-muted-foreground">
-                  The livestream will be available here when the convention begins on December 5th, 2025.
-                </p>
+        {/* Livestream & Chat Container */}
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4">
+          {/* Video Player */}
+          <Card className="lg:col-span-2 p-4 border-2 border-accent">
+            {YOUTUBE_VIDEO_ID ? (
+              <iframe
+                className="w-full aspect-video rounded-lg"
+                src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=0&rel=0`}
+                title="ECOBA 2025 AGM & Convention Livestream"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            ) : (
+              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+                <div className="text-center p-8">
+                  <div className="text-6xl mb-4">📺</div>
+                  <h3 className="text-2xl font-bold text-primary mb-2">
+                    Livestream Coming Soon
+                  </h3>
+                  <p className="text-muted-foreground">
+                    The livestream will be available here when the convention begins on December 5th, 2025.
+                  </p>
+                </div>
               </div>
-            </div>
-          )}
-        </Card>
+            )}
+          </Card>
+
+          {/* Live Chat */}
+          <Card className="p-4 border-2 border-accent">
+            <h3 className="text-lg font-bold text-primary mb-3">Live Chat</h3>
+            {YOUTUBE_VIDEO_ID ? (
+              <iframe
+                className="w-full h-[400px] lg:h-[calc(100%-2.5rem)] rounded-lg"
+                src={`https://www.youtube.com/live_chat?v=${YOUTUBE_VIDEO_ID}&embed_domain=${window.location.hostname}`}
+                title="ECOBA 2025 Live Chat"
+                allow="accelerometer; clipboard-write; encrypted-media"
+              />
+            ) : (
+              <div className="h-[400px] lg:h-[calc(100%-2.5rem)] bg-muted rounded-lg flex items-center justify-center">
+                <div className="text-center p-4">
+                  <div className="text-4xl mb-3">💬</div>
+                  <p className="text-muted-foreground text-sm">
+                    Live chat will be available during the broadcast.
+                  </p>
+                </div>
+              </div>
+            )}
+          </Card>
+        </div>
 
         {/* Website Link */}
         <div className="text-center mt-12">
