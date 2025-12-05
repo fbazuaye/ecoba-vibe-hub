@@ -47,6 +47,36 @@ export type Database = {
         }
         Relationships: []
       }
+      livestream_views: {
+        Row: {
+          city: string | null
+          country: string | null
+          created_at: string
+          id: string
+          region: string | null
+          session_id: string
+          user_agent: string | null
+        }
+        Insert: {
+          city?: string | null
+          country?: string | null
+          created_at?: string
+          id?: string
+          region?: string | null
+          session_id: string
+          user_agent?: string | null
+        }
+        Update: {
+          city?: string | null
+          country?: string | null
+          created_at?: string
+          id?: string
+          region?: string | null
+          session_id?: string
+          user_agent?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

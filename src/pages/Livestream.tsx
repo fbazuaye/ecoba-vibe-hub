@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Countdown } from "@/components/Countdown";
+import { LivestreamAnalytics } from "@/components/LivestreamAnalytics";
 
 // UPDATE THIS: Replace with your YouTube video ID when the livestream is ready
 // Example: For URL https://www.youtube.com/watch?v=ABC123, use "ABC123"
@@ -28,6 +29,11 @@ export default function Livestream() {
             Convention Starts In
           </h2>
           <Countdown targetDate={eventDate} />
+        </div>
+
+        {/* Analytics Dashboard */}
+        <div className="max-w-7xl mx-auto mb-8">
+          <LivestreamAnalytics />
         </div>
 
         {/* Livestream & Chat Container */}
