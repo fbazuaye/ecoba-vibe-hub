@@ -5,7 +5,9 @@ import { supabase } from "@/integrations/supabase/client";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
-
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
+import * as XLSX from "xlsx";
 interface Attendee {
   id: string;
   name: string;
@@ -47,6 +49,22 @@ export default function Delegates() {
 
   const branches = Array.from(new Set(attendees.map(a => a.branch)));
 
+  const exportToExcel = () => {
+    const exportData = filteredAttendees.map(attendee => ({
+      Name: attendee.name,
+      "Class Set": attendee.class_set,
+      Branch: attendee.branch,
+      Email: attendee.email,
+      Phone: attendee.phone,
+      "Attendance Type": attendee.attendance_type
+    }));
+
+    const worksheet = XLSX.utils.json_to_sheet(exportData);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Attendees");
+    XLSX.writeFile(workbook, "ECOBA_2025_Attendees.xlsx");
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -61,11 +79,18 @@ export default function Delegates() {
 
         {/* Search and Filters */}
         <div className="max-w-4xl mx-auto mb-12 space-y-4">
-          <Input
-            placeholder="Search by name or set..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+          <div className="flex gap-4">
+            <Input
+              placeholder="Search by name or set..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="flex-1"
+            />
+            <Button onClick={exportToExcel} variant="outline" className="gap-2">
+              <Download className="h-4 w-4" />
+              Export Excel
+            </Button>
+          </div>
           <div className="flex flex-col md:flex-row gap-4">
             <Select value={branchFilter} onValueChange={setBranchFilter}>
               <SelectTrigger className="flex-1">
